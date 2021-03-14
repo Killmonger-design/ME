@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" media="screen" href="css/mainstyle.css?1480537321" />
+        <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(
+                    function () {
+                        setInterval(function () {
+                            $.get("ajax_updates.php", function (result) {
+                                var results = result.split("|");
+                                $(".inmates").html(results[0]);
+                                $(".mail").html(results[1]);
+                                $(".events").html(results[2]);
+                                $(".hitlist").html(results[3]);
+                                $(".animals").html(results[4]);
+								if(results[5] > 0)
+									document.title = "(" + results[5] + ") Mafia Thug";
+								else if(results[5] == 0)
+									document.title = "Mafia Thug";
+                                $(".genBars").html(results[6]);
+                            });
+                        }, 2000);
+                    });
+        </script>
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <title>Mafia Thug</title>
+    </head>
+    <body>
+        <table class='wholescreen' width="100%">
+            <tr><td>
+                    <table class="top" width='100%'>
+                        <tr>
+                            <td align="left">
+                                
+                            </td>
+                            <td align="right">
+                                <a href='vote.php'><span style='color:lime;'>Vote</span></a> | 
+                                <a href='refer.php'>Refer</a> | 
+                                <a href='gameupdates.php'>Updates</a> | 
+                                <a href="news.php">News</a> [<a href="forum.php?topic=652">DL</a>] | 
+                                    <a href="comps.php">Comps</a> | 
+                                    <a href="gameguide.php">Game Guide</a> |
+                                    <a href="itempedia.php">Itempedia</a> |
+                                    <a href="tos.php">TOS</a> | 
+									<a href="http://game2.mafiathug.com" target="_blank" style="color:white;">MT2</a> | 
+                                    <a href="rmstore.php" style="color:gold;">Upgrade Account</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="pos1" valign="top">
+                    <div class="topbox">
+                        <table>
+                            <tr>
+                                <td colspan='2' width="99%" style="font-weight:700;text-align:left;vertical-align:top;padding:0;" class="resize">
+                                    <div style="background:rgba(0,0,0,.75);width:200px;height:150px;margin:0;padding-left:25px;">
+                                        <div style="margin:0 auto;white-space:nowrap;line-height:18.5px;">
+                                            <br />
+                                            &nbsp;<strong>ID: </strong> 1594<br />
+                                            &nbsp;<strong>Name: </strong> <a href='viewgang.php?id=101'>[<span style='color: #74006C'>S</span><span style='color: #00FF00'>i</span><span style='color: #74006C'>N</span>]</a>&nbsp;<strong><a title='Respected Thug [28 RT Days Left]' href='profiles.php?id=1594'><span style="color:#000000">K</span><span style="color:#000000">i</span><span style="color:#000000">l</span><span style="color:#000000">l</span><span style="color:#000000">e</span><span style="color:#000000">r</span><span style="color:#000000"> </span><span style="color:#000000">I</span><span style="color:#000000">n</span><span style="color:#000000">s</span><span style="color:#000000">t</span><span style="color:#000000">i</span><span style="color:#000000">n</span><span style="color:#000000">c</span><span style="color:#000000">t</span></a></strong> <img src='images/star.gif' width='12px' title='Prestige (6)' /><br />
+                                            &nbsp;<strong>Level: </strong> <span class="level">1353</span><br />
+                                            &nbsp;<strong>Money: </strong> <span style='color:gold;font-weight:700;' class='money'>$0</span> <a href='bank.php?dep'><img src='images/deposit.gif' title='Deposit' alt='Deposit'/></a></span> <a href='sendmoney.php'><img src='images/send.jpg' title='Send' alt='Send'/></a><br />
+                                            &nbsp;<strong>Points: </strong> <a href='spendpoints.php' style='color:white;font-weight:700;'><span class='points'>14,277,403</span></a> <a href='sendpoints.php'><img src='images/send.jpg' title='Send' alt='Send'/></a><br />
+                                            &nbsp;<strong>Credits: </strong> <a href='rmstore.php' style='color:yellow;'>19</a> <a href='sendcredits.php'><img src='images/send.jpg' title='Send' alt='Send'/></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td colspan='2' width="1%">
+                                    <div class='genBars' style="background:rgba(0,0,0,.75);height:150px;">
+                                        <div class='progress'><div class='progress-bar' style='width:100%;'><span style='color:white;'>HP:</span> 67,650 / 67,650 [100%]</div></div><a href='?spend=energy'><div class='progress'><div class='progress-bar' style='width:100%;'><span>Energy:</span> 1,362 / 1,362 [100%]</div></div></a><a href='?spend=awake'><div class='progress'><div class='progress-bar' style='width:100%;'><span>Awake:</span> 5,250 / 5,250 [100%]</div></div></a><a href='?spend=nerve'><div class='progress'><div class='progress-bar' style='width:7%;'><span>Nerve:</span> 107 / 1,357 [7%]</div></div></a><div class='progress'><div class='progress-bar' style='width:17%;'><span style='color:white;'>EXP:</span> 317,854,346 to go</div></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class='top'>
+                        <tr>
+                            <td align="left">
+                                March 14, 2021 7:59:55am                            </td>
+                            <td align="right"><span class="resizethug"><a href="goth.php"><strong>Gang of the Hour:</strong></a> <a href='viewgang.php?id=16'>[Eso]</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table style="width:100%;border-spacing:0px;margin-top:5px;">
+                        <tr>
+                            <td valign="top" width="175">
+							<div class="menu">
+								<div class="head">Menu</div>
+																<a href="index.php">Home</a>
+								<a href="dailies.php">Check Dailies</a>
+								<a href="tavern.php">The Tavern [0]</a>
+								<a href="inventory.php">Inventory</a>
+								<a href="city.php" style="font-weight:700;">New Jersey </a>
+								<a href="bank.php">Bank</a>
+								<a href="gym.php">Gym </a>
+								<a href="crime.php">Crime</a>
+								<a href="gang.php">Your Gang</a>
+								<a href="gangmail.php">Gang Mail [0]</a>
+								<a href="pms.php?view=inbox">Mailbox [<span class='mail'>0</span>]</a>
+								<a href="events.php">Events [<span class='events'>0</span>]</a>
+								<a href="jail.php">Jail <span class='inmates'>[<span style='color:lime;'>87</span>]</span></a>
+								<a href="hospital.php">Hospital [0]</a>
+								<a href="petjail.php">Dog Pound <span class='animals'>[0]</span></a>
+								<a href="hitlist.php">Hitlist [<span class='hitlist'>0</span>]</a>
+								<a href="missions.php">Missions [0]</a>
+								<a href="backalley.php">Back Alley</a>
+								<a href="smartads.php">Smart Ads</a>
+								<a href="spylog.php">Spy Log</a>
+								<a href="notepad.php">Notepad</a>
+								<a href="search.php">Thug Search</a>
+								<a href="classifieds.php">Newspaper</a>
+								<a href="chat.php">Thug Chat [<span style='color:lime;'>1</span>]</a>
+								<a href="forum.php">Forums</a>
+								<a href="index.php?action=logout">Logout</a>
+							</div>
+																	<div class="menu">
+										<div class="head">Pets</div>
+										<a href="pethof.php">Pet Hall Of Fame</a>
+										<a href="petshop.php">Pet Shop</a>
+										<a href="petgym.php">Pet Gym</a>
+										<a href="petcrime.php">Pet Crime</a>
+										<a href="pettrack.php">Pet Track</a>
+										<a href="mypets.php">My Pets</a>
+										<a href="petspylog.php">Pet Spy Log</a>
+									</div>
+									<div class="menu">
+										<div class="head">Support</div>
+										<a href="tickets.php">Support Desk</a>
+										<a href="bbcode.php">BBCode Help</a>
+										<a href="forum.php?id=8">Help Forum</a>
+									</div>
+									<div class="menu">
+										<div class="head">Account</div>
+										<a href="preferences.php">Edit Account</a>
+										<a href="cpassword.php">Change Password</a>
+										<a href="contactlist.php">Contact List</a>
+										<a href="ignorelist.php">Ignore List</a>
+										<a href="rmstore.php">Upgrade Account</a>
+									</div>
+                            </td>
+                            <td valign="top">
+                                <table style="width:100%;border-spacing:0px;">
+                                    <tr>
+                                        <td>
+                                            <table class="content" style="border-spacing:0px;align:right;margin-left:3px;margin-top:-1px;">
+                                                <tr><td class="contenthead">Important Message</td></tr><tr><td class="contentcontent"><a href='jail.php'>You're in the jail for 2 minutes.</a></td></tr><tr><td class="contentspacer"></td></tr><tr><td class="contenthead">General Information</td></tr><tr><td class="contentcontent" style="text-align:center;"><br /><a href="?protect"><span style="color:yellow;font-size:1.5em;">Buy Witness Protection for 50 points, last 10 minutes.</span></a><br /><br /><script type="text/javascript">
+    function returnexp() {
+        $.post("ajax_exp.php", {'level': $('#level').val()}, function (callback) {
+            $(".returnexp").html(callback);
+        });
+    }
+</script>
+<table width='100%' id='mttable'>
+    <tr>
+        <th width='20%'>Name:</th>
+        <td width='30%'><a href='viewgang.php?id=101'>[<span style='color: #74006C'>S</span><span style='color: #00FF00'>i</span><span style='color: #74006C'>N</span>]</a>&nbsp;<strong><a title='Respected Thug [28 RT Days Left]' href='profiles.php?id=1594'><span style="color:#000000">K</span><span style="color:#000000">i</span><span style="color:#000000">l</span><span style="color:#000000">l</span><span style="color:#000000">e</span><span style="color:#000000">r</span><span style="color:#000000"> </span><span style="color:#000000">I</span><span style="color:#000000">n</span><span style="color:#000000">s</span><span style="color:#000000">t</span><span style="color:#000000">i</span><span style="color:#000000">n</span><span style="color:#000000">c</span><span style="color:#000000">t</span></a></strong> <img src='images/star.gif' width='12px' title='Prestige (6)' /></td>
+        <th width='20%'>HP:</th>
+        <td width='30%'>67,650 / 67,650 [100%]</td>
+    </tr>
+    <tr>
+        <th>Total Played:</th>
+        <td>5 days, 3 hours</td>
+        <th>Diplomas:</th>
+        <td>0</td>
+    </tr>
+    <tr>
+        <th>Level:</th>
+        <td>1353</td>
+        <th>Energy:</th>
+        <td>1,362 / 1,362 [100%]</td>
+    </tr>
+    <tr>
+        <th>Money:</th>
+        <td>$0</td>
+        <th>Awake:</th>
+        <td>1,750 / 1,750 [100%]<font color=green> + 3500</font></td>
+    </tr>
+    <tr>
+        <th>Bank:</th>
+        <td>$22,293,267,479</td>
+        <th>Nerve:</th>
+        <td>107 / 1,357 [7%]</td>
+    </tr>
+    <tr>
+        <th>EXP:</th>
+        <td>69,145,654 / 387,000,000 [17%] [<a href="expguide.php">EXP Guide</a>]</td>
+        <th>Work EXP:</th>
+        <td>0</td>
+    </tr>
+    <tr>
+        <th>EXP Needed:</th>
+        <td style="text-align:left;"><input type="text" size="3" maxlength="3" id="level" onkeyup="returnexp();" /> <span class="returnexp" style="text-indent:10px;"></span></td>
+        <th>Marijuana:</th>
+        <td>0</td>
+    </tr>
+</table>
+</td></tr>
+<tr><td class="contentspacer"></td></tr>
+<tr><td class="contenthead">Base Attributes</td></tr>
+<tr><td class="contentcontent">
+        <table width='100%' id='mttable'>
+            <tr>
+                <th width='20%'>Strength:</th>
+                <td width='30%'>307,046</td>
+                <th width='20%'>Defense:</th>
+                <td width='30%'>10</td>
+            </tr>
+            <tr>
+                <th>Speed:</th>
+                <td>1,556,845</td>
+                <th>Total:</th>
+                <td>1,863,901</td>
+            </tr>
+        </table>
+    </td></tr>
+<tr><td class="contentspacer"></td></tr>
+<tr><td class="contenthead">Modded Attributes [Equipped Items + Drug Bonus + Pet Stats]</td></tr>
+<tr><td class="contentcontent">
+        <table width='100%' id='mttable'>
+            <tr>
+                <th width='20%'>Modded Strength:</th>
+                <td width='30%'>675,501</td>
+                <th width='20%'>Modded Defense:</th>
+                <td width='30%'>10</td>
+            </tr>
+            <tr>
+                <th>Modded Speed:</th>
+                <td>3,425,059</td>
+                <th>Modded Total:</th>
+                <td>4,100,570</td>
+            </tr>
+        </table>
+    </td></tr>
+<tr><td class="contentspacer"></td></tr>
+<tr><td class="contenthead">Battle Stats</td></tr>
+<tr><td class="contentcontent">
+        <table width='100%' id='mttable'>
+            <tr>
+                <th width='20%'>Won:</th>
+                <td width='30%'>7</td>
+                <th width='20%'>Lost:</th>
+                <td width='30%'>721</td>
+            </tr>
+            <tr>
+                <th>Total:</th>
+                <td>728</td>
+                <th>Money Gain:</th>
+                <td>$-359,904</td>
+            </tr>
+        </table>
+    </td></tr>
+<tr><td class="contentspacer"></td></tr>
+<tr><td class="contenthead">Crime Stats</td></tr>
+<tr><td class="contentcontent">
+        <table width='100%' id='mttable'>
+            <tr>
+                <th width='20%'>Succeeded:</th>
+                <td width='30%'>2,524,164</td>
+                <th width='20%'>Failed:</th>
+                <td width='30%'>219,472</td>
+            </tr>
+            <tr>
+                <th>Total:</th>
+                <td>2,743,636</td>
+                <th>Money Gain:</th>
+                <td>$86,611,026,580</td>
+            </tr>
+        </table>
+    </td></tr>
+<tr><td class="contentspacer"></td></tr>
+<tr><td class="contenthead">Daily Statistics</td></tr>
+<tr><td class="contentcontent">
+        <table width='100%' id='mttable'>
+            <tr>
+                <th width='20%'>Thug OTD:</th>
+                <td width='30%'>0</td>
+                <th width='20%'>Thug OTH:</th>
+                <td width='30%'>0</td>
+            </tr>
+            <tr>
+                <th>Leveler OTD:</th>
+                <td>759,717,427</td>
+                <th>Leveler OTH:</th>
+                <td>9,132,864</td>
+            </tr>
+            <tr>
+                <th>Buster OTD:</th>
+                <td>1</td>
+                <th>Buster OTH:</th>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Mugger OTD:</th>
+                <td>0</td>
+                <th>Mugger OTH:</th>
+                <td>0</td>
+            </tr>
+        </table>
+    </td></tr>
+<tr><td class="contentspacer"></td></tr>
+<tr><td class="contenthead">Thug Medals</td></tr>
+<tr><td class="contentcontent center" style="padding: 15px;font-weight:700;">
+        <a href="badges.php">View My Medals</a>
+    </td></tr><tr><td class='contentspacer'></td></tr><tr><td class="contenthead">Logs</td></tr><tr><td class="contentcontent" style="text-align:center;"><a href='attacklog.php'><button>Attack Log</button></a> <a href='defenselog.php'><button>Defense Log</button></a> <a href='translog.php'><button>Transaction Log</button></a></table></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class="top">
+    <tr>
+        <td align="left">&copy; 2021 mafiathug.com All Rights Reserved.</td>
+        <td align="right">
+            <a href='citizens.php'>2284 Total Thugs</a>&nbsp; | &nbsp;
+            <a href='online.php'>5 Thugs Online</a>&nbsp; | &nbsp;
+            <a href='24hour.php'>45 Thugs Online (24 Hours)</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            0.0056400299072266 (13)        </td>
+    </tr>
+</table>
+</body>
+</html>
